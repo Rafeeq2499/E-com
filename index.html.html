@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+<!-- {% load static %} -->
+<!-- {% block style %}<link rel="stylesheet" href="{% static 'css/home.css' %}">{% endblock %} -->
+
+<style>
+
+  .body{
+    background-color: rgba(181, 241, 218, 0.808);
+}
+h1{
+    color: rgb(6, 67, 236);
+    font-size: 40px;
+    margin-left: 500px;
+
+
+}
+h3{
+    font-size: 55px;
+    margin-left: 500px;
+}
+.main{
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(12, 252, 4);
+    box-shadow: 10px 10px 10px black;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+{% block content %}
+
+    <h1>welcome</h1>
+     <h3>home page</h3>
+       {% if name %}
+    <h2>name:{{name}}</h2>
+      {% else %}
+      <h2>hello user</h2>
+        {% endif %}
+    <h2>email:{{email}}</h2>
+    <h2>phone:{{phone}}</h2>
+    <hr>
+      {% if num > 0 %}
+      <h1>possitive</h1>
+      {% elif num == 0 %}
+      <h1>zero</h1>
+      {% else %}
+      <h1>negative</h1>
+      {% endif %}
+      <hr>
+
+      {% for i in users %}
+
+      <div class="main">
+        <h4>{{i}}</h4>
+      </div>
+      {% endfor %}
+
+      {% endblock %}
+    

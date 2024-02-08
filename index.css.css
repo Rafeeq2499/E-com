@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(243, 177, 177);
+}
+h1{
+    color: rgb(6, 67, 236);
+    font-size: 40px;
+    margin-left: 500px;
+
+
+}
+h3{
+    font-size: 55px;
+    margin-left: 500px;
+}
+.main{
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(12, 252, 4);
+    box-shadow: 10px 10px 10px black;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
